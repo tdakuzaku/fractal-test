@@ -13,12 +13,15 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Cards');
+fractal.set('project.title', 'Hello World');
 
 /*
  * Tell Fractal where to look for components.
  */
 fractal.components.set('path', path.join(__dirname, 'components'));
+
+fractal.components.set('default.preview', '@preview');
+
 
 /*
  * Tell Fractal where to look for documentation pages.
